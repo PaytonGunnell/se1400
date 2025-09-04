@@ -3,6 +3,11 @@ body {
     text-decoration-color: #666666;
     font-family: Verdana;
 }
+header {
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia;
+}
 header h1 {
     line-height: 140%;
     padding: .5rem;
