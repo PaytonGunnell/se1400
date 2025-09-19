@@ -18,7 +18,6 @@ header h1 {
     background-repeat: no-repeat;
     background-position: right;
     background-origin: content-box;
-    /* padding-left: 1em; */
     padding: .5rem .5rem .5rem 1em;
     margin-bottom: 0;
 }   
@@ -75,6 +74,7 @@ footer {
 
     width: 100%;
     height: 300px;
+    border-bottom: 1px solid #000;
 }
 #studenthero {
     background-image: url("utahtechimages/studenthero.jpg");
@@ -83,12 +83,17 @@ footer {
     background-position: center;
     width: 100%;
     height: 300px;
+    border: 1px solid #000;
+
+        border-bottom: 100px solid #000;
+
 }
 #facultyhero {
     background-image: url("utahtechimages/facultyhero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background
     width: 100%;
     height: 300px;
 }
