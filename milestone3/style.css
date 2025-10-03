@@ -1,0 +1,53 @@
+* {
+    /* box-sizing: border-box; */
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    background-color: rgb(191, 191, 191);
+    opacity: 0.8;
+}
+
+nav {
+    grid-column: 2 / 8;
+    height: 100px;
+    background-color: rgb(255, 114, 114);
+    opacity: 0.8;
+}
+
+main {
+    grid-column: 2 / 8;
+    padding: 0rem;
+    margin: 0;
+}
+
+header {
+    grid-column: 2 / 8;
+    height: 300px;
+    background-color: rgb(255, 255, 124);
+    opacity: 0.8;
+    padding: 0rem;
+    margin: 0;
+}
+
+#aboutme {
+    grid-column: 2 / 8;
+    height: 300px;
+    background-color: rgb(132, 252, 132);
+    opacity: 0.8;
+}
+
+#projects {
+    grid-column: 2 / 8;
+    height: 300px;
+    background-color: rgb(110, 221, 255);
+    opacity: 0.8;
+}
+
+footer {
+    grid-column: 2 / 8;
+    height: 200px;
+    background-color: rgb(61, 61, 253);
+    opacity: 0.8;
+}
