@@ -20,9 +20,9 @@ nav {
 }
 
 main {
+    grid-column: 2 / 8;
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-    grid-column: 2 / 8;
     padding: 0rem;
     margin: 0rem;
 }
