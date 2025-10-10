@@ -1,0 +1,209 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    background-color: rgb(191, 191, 191);
+    padding: 0rem;
+    margin: 0rem;
+}
+
+nav {
+    display: grid;
+    grid-column: 2 / 8;
+    justify-content: left;
+    height: 5rem;
+    background-color: white;
+    padding-left: 3rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-column: 2 / 8;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+ul li {
+    padding-right: 4rem;
+    margin: 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    font-size: larger;
+    color: black;
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+header {
+    display: grid;
+    grid-column: 2 / 8;
+    grid-template-columns: repeat(6, 1fr);
+    height: 25rem;
+    background-color: rgb(255, 255, 124);
+    padding: 3rem 3rem 0rem;
+    /* padding-left: 1rem; */
+    margin: 0;
+    background-color: #283f5d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header #description {
+    grid-column: 1 / 4;
+    /* padding: 1rem; */
+    color: white;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 100;
+    padding: 0rem;
+    padding-bottom: 1rem;
+    margin: 0rem;
+}
+
+header #profilepic {
+    grid-column: 4 / 8;
+    justify-self: center;
+    background-image: url(milestone4images/user-solid-full.svg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 100%;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+#aboutme {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    align-content: start;
+    height: 25rem;
+    background-color: white;
+    text-align: left;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+#aboutme p {
+    display: grid;
+    grid-column: 2 / 6;
+}
+
+h2 {
+    grid-column: 1 / 8;
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 100;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+#projects {
+    grid-column: 2 / 8;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    height: 30rem;
+    background-color: #283f5d;
+    margin: 0;
+    padding: 0;
+}
+
+#projects h2 {
+    color: white;
+}
+
+#projects ul {
+    /* display: flex; */
+    height: 100%;
+    justify-content: center;
+    /* padding: 0rem 3rem 2rem; */
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+#projects li {
+    display: flex;
+    height: 100%;
+    width: 17rem;
+    background-color: #bec5ce;
+    border-radius: 20px;
+    padding: 0;
+    margin: 2rem;
+}
+
+#projects a {
+    height: 100%;
+    justify-items: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem 1rem 1rem 1rem;
+    color: black;
+}
+
+#projects a h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0rem;
+    margin: 1rem 0rem 0.5rem;
+}
+
+footer {
+    grid-column: 2 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 18rem;
+}
+
+#outro {
+    padding: 0rem 15rem 0rem;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+footer ul li {
+    padding: 0rem 1rem 0rem;
+    margin: 0rem;
+}
+
+#copyright {
+    font-size: 1.4rem;
+}
