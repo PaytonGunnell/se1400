@@ -17,6 +17,8 @@ nav {
     height: 5rem;
     background-color: white;
     padding-left: 3rem;
+    position: sticky;
+    top: 0;
 }
 
 main {
