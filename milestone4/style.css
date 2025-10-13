@@ -13,7 +13,7 @@
 nav {
     display: grid;
     grid-column: 2 / 8;
-    justify-content: left;
+    /* justify-content: left; */
     height: 5rem;
     background-color: white;
     padding-left: 3rem;
@@ -21,8 +21,8 @@ nav {
 
 main {
     grid-column: 2 / 8;
-    display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    display: flex;
+    flex-direction: column;
     padding: 0rem;
     margin: 0rem;
 }
@@ -62,7 +62,7 @@ p {
 header {
     display: grid;
     grid-column: 2 / 8;
-    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-columns: repeat(6, 1fr); */
     height: 25rem;
     background-color: rgb(255, 255, 124);
     padding: 3rem 3rem 0rem;
@@ -101,21 +101,14 @@ header #profilepic {
 }
 
 #aboutme {
-    grid-column: 2 / 8;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     height: 25rem;
     background-color: white;
+    align-items: center;
     text-align: left;
     padding: 0rem;
     margin: 0rem;
-}
-
-#aboutme p {
-    display: grid;
-    grid-column: 2 / 6;
 }
 
 h2 {
@@ -129,8 +122,11 @@ h2 {
     padding-top: 1.5rem;
 }
 
+#aboutme p {
+    max-width: 45rem;
+}
+
 #projects {
-    grid-column: 2 / 8;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -145,10 +141,10 @@ h2 {
 }
 
 #projects ul {
-    /* display: flex; */
+    display: flex;
     height: 100%;
     justify-content: center;
-    /* padding: 0rem 3rem 2rem; */
+    overflow: hidden;
     padding-bottom: 3rem;
     margin: 0;
 }
@@ -159,6 +155,7 @@ h2 {
     width: 17rem;
     background-color: #bec5ce;
     border-radius: 20px;
+    overflow: hidden;
     padding: 0;
     margin: 2rem;
 }
@@ -180,17 +177,20 @@ h2 {
 }
 
 footer {
-    grid-column: 2 / 8;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     height: 18rem;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 #outro {
-    padding: 0rem 15rem 0rem;
+    padding: 0rem;
+    max-width: 40rem;
+    margin: 0rem;
     font-size: 1.2rem;
 }
 
@@ -206,4 +206,6 @@ footer ul li {
 
 #copyright {
     font-size: 1.4rem;
+    padding: 0rem;
+    margin: 0rem;
 }
