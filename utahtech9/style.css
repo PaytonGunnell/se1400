@@ -220,7 +220,7 @@ td {
 }
 #shoppingcart {
     display: grid;
-    grid-column: 1rem 1rem 1rem;
+    grid-template-columns: auto auto auto;
 }
 #shoppingcart img {
     width: 100%;
@@ -279,7 +279,7 @@ td {
         padding-left: 0px;
     }
     #shoppingcart {
-        grid-column: 1rem 1rem;
+        grid-template-columns: auto auto;
     }
 }
 @media screen and (max-width: 600px) {
@@ -307,6 +307,6 @@ td {
         display: none;
     }
     #shoppingcart {
-        grid-column: 1rem;
+        grid-template-columns: auto;
     }
 }
