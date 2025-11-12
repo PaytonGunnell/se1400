@@ -133,6 +133,7 @@ h2 {
     font-size: 2rem;
     font-weight: 400;
     margin: 1rem 0rem 0.5rem;
+    text-align: center;
 }
 footer {
     display: flex;
@@ -192,9 +193,6 @@ footer ul li {
     header #profilepic {
         width: 200px;
         height: 200px;
-    }
-    #projects ul li h3 {
-        text-align: center;
     }
     #projects ul li p {
         font-size: 1.6rem;
