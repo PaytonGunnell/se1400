@@ -288,7 +288,7 @@ footer ul li {
     background-color: #bec5ce;
     border-radius: 20px;
     width: 100%;
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0rem rem 1rem 1rem;
     color: black;
     
     align-items: center;
@@ -298,37 +298,39 @@ footer ul li {
 #project1image {
     height: 400px;
     width: 220px;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 #project2image {
     height: 400px;
     width: 220px;
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 #project3image {
     height: 400px;
     width: 220px;
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 #project4image {
     height: 400px;
     width: 390px;
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 #project5image {
     height: 400px;
     width: 220px;
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 #projectslist ul li a h3 {
     height: 1rem;
+    padding: 0.5rem;
 }
 #projectslist ul li a p {
     height: 1rem;
+    padding: 0rem 0.5rem;
 }
 
 /* resume */
@@ -344,7 +346,7 @@ footer ul li {
     height: auto;
     display: block;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
 }
 #clickhere {
     color: black;
@@ -352,6 +354,8 @@ footer ul li {
     box-sizing: border-box;
     border-radius: 20px;
     margin: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
 }
 
 #pagesfooter {
