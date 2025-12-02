@@ -1,0 +1,368 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0rem;
+    margin: 0rem;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    background-color: rgb(191, 191, 191);
+}
+nav {
+    display: flex;
+    grid-column: 2 / 8;
+    height: 5rem;
+    background-color: white;
+    padding-left: 3rem;
+    position: sticky;
+    top: 0;
+}
+main {
+    grid-column: 2 / 8;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+nav ul li {
+    padding-right: 4rem;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    font-size: larger;
+    color: black;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+p {
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+header {
+    height: 25rem;
+    background-color: rgb(255, 255, 124);
+    padding: 3rem 3rem 0rem;
+    background-color: #283f5d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header #description {
+    color: white;
+}
+header h3 {
+    font-size: 4rem;
+    font-weight: 100;
+    padding-bottom: 1rem;
+}
+header #profilepic {
+    float:right;
+    background-image: url(milestone7images/charmander.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    background-color: white;
+    align-items: center;
+    text-align: left;
+    padding: 0rem 1rem 0rem 1rem;
+}
+h2 {
+    grid-column: 1 / 8;
+    display: grid;
+    justify-content: center;
+    font-size: 2.6rem;
+    font-weight: 100;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+#aboutme p {
+    max-width: 45rem;
+}
+#projects {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    background-color: #283f5d;
+}
+#projects h2 {
+    color: white;
+}
+#projects ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    height: 100%;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#projects ul li {
+    padding: 0rem 1rem 1rem 1rem;
+    width: 17rem;
+    height: auto;
+    padding-bottom: 1rem;
+}
+#projects a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #bec5ce;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0rem 1rem 1rem 1rem;
+    color: black;
+}
+#projects a h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0rem 0.5rem;
+    text-align: center;
+}
+#aboutfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 18rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+#outro {
+    max-width: 40rem;
+    font-size: 1.2rem;
+}
+footer ul {
+    display: flex;
+    align-items: center;
+}
+footer ul li {
+    padding: 0rem 1rem 0rem;
+}
+#copyright {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 992px) {
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 128px)) minmax(0px, 1fr);
+    }
+    #projects ul {
+        justify-content: start;
+    }
+    #projects ul li {
+        margin: 0.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav {
+        grid-column: 1 / 9;
+        position: static;
+        padding: 0rem;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav ul li {
+        padding: 0rem;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    header #profilepic {
+        width: 200px;
+        height: 200px;
+    }
+    #projects ul li p {
+        font-size: 1.6rem;
+    }
+    footer ul li img {
+        width: 50px;
+    }
+}
+
+/* skills */
+#skillssection {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #283f5d;
+    /* justify-items: center;
+    align-items: center; */
+}
+#skillssection h2 {
+    color: white;
+}
+#skillssection h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0rem 0.5rem;
+    text-align: center;
+}
+#skillssection p {
+    text-align: center;
+}
+#skillssection ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#skillssection ul li {
+    padding: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 17rem;
+    padding-bottom: 1rem;
+}
+#skillssection ul li a {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* height: 100%; */
+    box-sizing: border-box;
+    background-color: #bec5ce;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0rem 1rem 1rem 1rem;
+    color: black;
+
+    height: 15rem;
+
+    /* justify-content:space-between; */
+}
+
+@media screen and (max-width: 992px) {
+    #skillssection ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* projects */
+
+#projectslist {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #283f5d;
+}
+
+#projectslist ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#projectslist ul li {
+    padding: 1rem;
+    width: 25rem;
+}
+#projectslist ul li a {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #bec5ce;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0rem rem 1rem 1rem;
+    color: black;
+    
+    align-items: center;
+
+    height: 600px;
+}
+#project1image {
+    height: 400px;
+    width: 220px;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#project2image {
+    height: 400px;
+    width: 220px;
+    display: block;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#project3image {
+    height: 400px;
+    width: 220px;
+    display: block;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#project4image {
+    height: 400px;
+    width: 390px;
+    display: block;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#project5image {
+    height: 400px;
+    width: 220px;
+    display: block;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#projectslist ul li a h3 {
+    height: 1rem;
+    padding: 0.5rem;
+}
+#projectslist ul li a p {
+    height: 1rem;
+    padding: 0rem 0.5rem;
+}
+
+/* resume */
+#resumecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #283f5d;
+}
+#resume {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+#clickhere {
+    color: black;
+    background-color: #bec5ce;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+}
+
+#pagesfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0rem 1rem 0rem 1rem;
+}
